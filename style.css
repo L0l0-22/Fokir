@@ -1,0 +1,471 @@
+/*shared section*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box;
+}
+.clr{
+    clear: both;
+}
+:root{
+    --main-color:#ff305b;
+}
+body{
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*home section*/
+div.home{
+height: 100vh;
+background-image: url(hero\ img.jpg);
+background-size: cover;
+}
+div.home div.home-layer{
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+div.home div.content{
+    text-align: center;
+    margin-top: 230px;
+    color: white;
+}
+div.home div.content h1{
+    color: var(--main-color);
+    margin-block: 15px;
+    font-size: 60px;
+}
+div.home div.content p{
+    font-size: 25px;
+}
+div.home div.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+div.home div.navbar div.container1{
+    margin-inline: 100px;
+    margin-top: 20px;
+}
+div.home div.navbar div.right-navbar{
+float: right;
+color: white;
+}
+div.home div.navbar div.right-navbar ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+div.home div.navbar div.right-navbar ul li{
+    padding-inline: 10px;
+    font-size: 15px;
+}
+div.home div.navbar div.right-navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+div.home div.navbar div.left-navbar a{
+    float: left;
+    color: var(--main-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+div.home div.navbar div.right-navbar ul li a:hover{
+    color: var(--main-color);
+}
+/*about section*/
+div.about div.container2{
+    width: 95%;
+    height: 100vh;
+    margin-block: 100px;
+    padding-top:100px ;
+}
+div.about div.container2 div.right-container{
+    width: 50%;
+    float: right;
+}
+div.about div.container2 div.right-container p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: large;
+    margin-block: 30px;
+}
+div.about div.container2 div.right-container h2 span{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+div.about div.container2 div.right-container  div.paragrah p{
+    color: black;
+    
+}
+div.right-container div.paragrah{
+    width: 70%;
+}
+div.right-container div.right-paragrah{
+    float: left;
+}
+div.right-container div.left-paragrah{
+    float: right;
+}
+div.about div.container2 div.right-container button{
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    margin-inline: 10px;
+    border-style: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+div.about div.container2 div.left-container{
+    width: 50%;
+    float: left;
+}
+div.about div.container2 div.left-container div.outline {
+    border: rgba(0, 0, 0, 0.638) solid 9px;
+    border-radius: 5px;
+    height: 460px;
+    width: 360px;
+    margin-left: 200px;
+    
+}
+div.about div.container2 div.left-container div.img-layer img{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+div.about div.container2 div.left-container div.img-layer{
+    position: relative;
+    overflow: hidden;
+}
+div.about div.container2 div.left-container div.img-layer div.icons{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    top: 100;
+    left: 0;
+    flex-direction: column;
+    opacity: 0s;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.6s;
+    z-index: 2;
+}
+div.about div.container2 div.left-container div.img-layer:hover div.icons{
+    opacity: 1;
+    top: 0;
+    color: white;
+}
+div.icons i:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/*services section*/
+div.services{
+    background-color:whitesmoke ;
+    height: 60vh;
+    width: 100%;
+}
+div.services div.container5{
+    padding: 70px;
+}
+div.services h2{
+    text-align: center;
+    padding: 5px;
+    font-size: 32px;
+    position: relative;
+}
+div.services h2::after{
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    margin-top: 10px;
+}
+div.services div.tools{
+    width: 80%;
+    margin-inline: 150px;
+    margin-block: 50px;
+}
+div.services div.tools div.single-service{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 25px;
+}
+div.services div.tools div.single-service h3{
+    font-size: 22px;
+    margin-block: 20px;
+}
+div.services div.tools div.single-service i{
+    color: var(--main-color);
+    font-size: 20px;
+}
+div.services div.tools :hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+/*portoflio section*/
+div.portfolio h2{
+    text-align: center;
+    padding-top: 100px;
+    margin-block: 50px;
+    font-size: 32px;
+    position: relative;
+}
+div.portfolio h2::after{
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    margin-top: 10px;
+}
+div.portfolio div.row{
+    padding-left: 600px;
+    margin-block: 30px;
+}
+div.portfolio div.row ul {
+    list-style: none;
+}
+div.portfolio div.row ul li{
+    float: left;
+    padding-inline: 10px;
+}
+div.portfolio div.row ul li a:hover{
+    color: var(--main-color);
+}
+div.portfolio div.image{
+    width: 90%;
+    padding-left: 150px;
+}
+div.portfolio div.image img{
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+div.portfolio div.cards{
+    background-color:whitesmoke ;
+    height: 30vh;
+    width: 100%;
+    overflow: auto;
+    margin-top: 90px;
+}
+div.portfolio div.cards div.container3{
+    width: 90%;
+    margin: 50px;
+}
+div.portfolio div.cards div.card{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+div.portfolio div.cards div.card i{
+    color: var(--main-color);
+    font-size: 25px;
+}
+div.portfolio div.cards div.card h4{
+    margin-block: 15px;
+    font-size: 30px;
+}
+div.portfolio div.cards div.card h5{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.634);
+}
+/*testimonial section*/
+div.testimonial{
+    background-color: white;
+    width: 100%;
+}
+div.testimonial h2{
+    text-align: center;
+    padding-top: 80px;
+    margin-block: 50px;
+    font-size: 32px;
+    position: relative;
+}
+div.testimonial h2::after{
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    margin-top: 10px;
+}
+div.testimonial div.box{
+    background-color: whitesmoke;
+    width: 750px;
+    height: 275px;
+    margin-left: 360px;
+    position: relative;
+}
+div.testimonial div.box div.triangle-element{
+border-bottom: solid 70px transparent;
+border-top: solid 70px #ff305b;
+border-left: solid 70px #ff305b;
+border-right: solid 70px transparent;
+height: 50px;
+width: 50px;
+z-index: 1;
+}
+div.testimonial div.box div.left-box{
+    width: 30%;
+    float: left;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    position: absolute;
+}
+div.testimonial div.box div.left-box img{
+    border-radius: 100px;
+    width: 50%;
+    margin: 50px;
+}
+div.testimonial div.box div.right-box{
+    float: right;
+    width: 70%;
+    top: 0;
+    padding: 70px 0 0 200px;
+    position: absolute;
+}
+div.testimonial div.box div.right-box h4 {
+    font-size: 25px;
+    margin-block: 10px;
+}
+div.testimonial div.box div.right-box a{
+    color: rgba(0, 0, 0, 0.849);
+}
+div.testimonial div.box div.right-box p{
+    color: rgba(0, 0, 0, 0.849);
+    margin-block: 10px;
+}
+div.testimonial div.box div.right-box div.star i{
+    color: #f1c30d;
+}
+
+/*blog section*/
+div.blog{
+    background-color:whitesmoke ;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    margin-top: 100px;
+}
+div.blog h2{
+    text-align: center;
+    padding-top: 100px;
+    margin-block: 50px;
+    font-size: 32px;
+    position: relative;
+}
+div.blog h2::after{
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    margin-top: 10px;
+}
+div.blog div.container4{
+    width: 90%;
+    margin-left: 150px;
+}
+div.blog div.container4 div.single-blog{
+    background-color: white;
+    float: left;
+    width: 25%;
+    margin-inline: 30px;
+}
+div.blog div.container4 div.single-blog img{
+    width: 100%;
+}
+div.blog div.container4 div.single-blog div.content-blog{
+    padding: 20px;
+}
+div.blog div.container4 div.single-blog div.content-blog h4{
+    padding-block: 10px;
+    font-size: 20px;
+}
+div.blog div.container4 div.single-blog div.content-blog h4:hover{
+    color: var(--main-color);
+}
+div.blog div.container4 div.single-blog div.content-blog h5{
+    padding-block: 10px;
+    font-size: 15px;
+}
+div.blog div.container4 div.single-blog div.content-blog h5:hover{
+    color: var(--main-color);
+}
+
+/*contact section*/
+div.contact h2{
+    text-align: center;
+    padding-top: 100px;
+    margin-block: 50px;
+    font-size: 38px;
+    position: relative;
+}
+div.contact h2::after{
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 47%;
+    margin-top: 10px;
+}
+div.contact div.forms{
+    text-align: center;
+}
+div.contact div.forms input{
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.458);
+}
+div.contact div.forms div.subject input{
+    width: 860px;
+}
+div.contact div.forms div.message input{
+    width: 830px;
+    padding: 30px;
+}
+div.contact div.forms button{
+    margin-right: 700px;
+    padding: 10px;
+    color: white;
+    background-color: #ff305b;
+    border-radius: 5px;
+    border-color: #ff305b;
+}
+
+/*footer section*/
+div.footer{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 50px;
+    margin-top: 60px;
+}
+div.footer i{
+    margin: 20px 10px 20px 10px;
+}
+div.footer i:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+div.footer p span{
+    color: var(--main-color);
+}
